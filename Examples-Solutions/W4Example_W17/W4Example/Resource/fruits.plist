@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>FruitName</key>
+		<string>Kiwi</string>
+		<key>FruitTaxonomy</key>
+		<array>
+			<string>Domain: Eukarya</string>
+			<string>Kingdom: Plantae</string>
+			<string>Phylum: Magnoliphyta</string>
+			<string>Class: Magnoliopsida</string>
+			<string>Order: Ericales</string>
+			<string>Family: Actinidiaceae</string>
+			<string>Genus: Actinidia</string>
+		</array>
+	</dict>
+	<dict>
+		<key>FruitName</key>
+		<string>Strawberry</string>
+		<key>FruitTaxonomy</key>
+		<array>
+			<string>Domain: Eukarya</string>
+			<string>Kingdom: Plantae</string>
+			<string>Phylum: Magnoliphyta</string>
+			<string>Class: Magnoliopsida</string>
+			<string>Order: Rosales</string>
+			<string>Family: Rosaceae</string>
+			<string>Genus: Fragaria</string>
+		</array>
+	</dict>
+	<dict>
+		<key>FruitName</key>
+		<string>Apple</string>
+		<key>FruitTaxonomy</key>
+		<array>
+			<string>Domain: Eukarya</string>
+			<string>Kingdom: Plantae</string>
+			<string>Phylum: Magnoliphyta</string>
+			<string>Class: Magnoliopsida</string>
+			<string>Order: Rosales</string>
+			<string>Family: Rosaceae</string>
+			<string>Genus: Malus</string>
+		</array>
+	</dict>
+	<dict>
+		<key>FruitName</key>
+		<string>Orange</string>
+		<key>FruitTaxonomy</key>
+		<array>
+			<string>Domain: Eukarya</string>
+			<string>Kingdom: Plantae</string>
+			<string>Phylum: Magnoliphyta</string>
+			<string>Class: Magnoliopsida</string>
+			<string>Order: Sapindales</string>
+			<string>Family: Rutaceae</string>
+			<string>Genus: Citrus</string>
+		</array>
+	</dict>
+</array>
+</plist>
