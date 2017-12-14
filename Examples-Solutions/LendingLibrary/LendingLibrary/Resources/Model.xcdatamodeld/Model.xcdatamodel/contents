@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Xcode 8.0" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName=".Category" syncable="YES" codeGenerationType="category">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="orderIndex" attributeType="Integer 16" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <relationship name="lentItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="LentItem" inverseName="category" inverseEntity="LentItem" syncable="YES"/>
+    </entity>
+    <entity name="LentItem" representedClassName=".LentItem" syncable="YES" codeGenerationType="category">
+        <attribute name="borrower" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="borrowerID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateBorrowed" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateToReturn" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="notify" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="category" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="lentItems" inverseEntity="Category" syncable="YES"/>
+        <relationship name="picture" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Picture" inverseName="lentItem" inverseEntity="Picture" syncable="YES"/>
+    </entity>
+    <entity name="Picture" representedClassName=".Picture" syncable="YES" codeGenerationType="category">
+        <attribute name="data" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <relationship name="lentItem" maxCount="1" deletionRule="Nullify" destinationEntity="LentItem" inverseName="picture" inverseEntity="LentItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="LentItem" positionX="-54" positionY="-9" width="128" height="165"/>
+        <element name="Picture" positionX="-36" positionY="72" width="128" height="75"/>
+    </elements>
+</model>
